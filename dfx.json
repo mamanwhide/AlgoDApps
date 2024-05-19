@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "lontarak_backend": {
+      "build": "python -m kybra lontarak_backend src/lontarak_backend/src/main.py src/lontarak_backend/lontarak_backend.did",
+      "candid": "src/lontarak_backend/lontarak_backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "gzip": true,
+      "post_install": ".kybra/lontarak_backend/post_install.sh",
+      "type": "custom",
+      "wasm": ".kybra/lontarak_backend/lontarak_backend.wasm"
+    },
+    "lontarak_frontend": {
+      "dependencies": [
+        "lontarak_backend"
+      ],
+      "source": [
+        "src/lontarak_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "lontarak_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
