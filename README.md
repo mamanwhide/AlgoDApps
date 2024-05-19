@@ -12,10 +12,15 @@ Algo Dapps adalah sebuah platform yang memanfaatkan teknologi blockchain untuk m
 - **Pelacakan Rantai Pasokan**: Teknologi Blockchain digunakan untuk memantau asal usul bahan baku, memastikan kualitas dan keaslian produk.
 - **Dukungan Multiplatform**: Dukungan untuk berbagai perangkat dan sistem operasi.
 
+Untuk mempelajari lebih lanjut sebelum Anda mulai bekerja dengan lontarak, lihat dokumentasi berikut yang tersedia online:
+- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
+- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
+
+
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki:
-
+Jika Anda ingin segera mulai mengerjakan proyek, pastikan untuk mengikuti perintah berikut::
+- DFX (Developer Experience) 
 - Node.js dan npm (Node Package Manager)
 
 ## Instalasi
@@ -30,6 +35,12 @@ Sebelum memulai, pastikan Anda memiliki:
 
     ```sh
     cd AlgoDApps
+    ```
+     ```sh
+    cd src
+    ```
+      ```sh
+    cd lontarak_frontend
     ```
 
 3. Instal dependensi:
@@ -52,10 +63,10 @@ Sebelum memulai, pastikan Anda memiliki:
 Untuk menjalankan server pengembangan:
 
 ```sh
-npm start
+npm run dev
 ```
 
-Server akan berjalan di `http://localhost:3000`..
+Server akan berjalan di `http://localhost:5173`..
 
 
 ## Kontribusi
